@@ -3,26 +3,27 @@ This is a home project library for reading the xinda Infrared Transmitter on ard
 
 
 public functions and variables:
+
   class constructor:
   
     xindaIR(unsigned char pin);
     
-  to initialize in the setup
+  to initialize in the setup:
   
     void xindaIR_Setup();
     
-  call frequently to read from the FIFO stack
+  call frequently to read from the FIFO stack to:
   
     void readIRstack();
     
-  returns a value according to what button is pressed
+  returns a value according to what button is pressed:
   
     char getIRmsg();
     
-  this value is true until button value is not read
+  this value is true until button value is not read:
   
     bool isButtonPressed ;
     
-  a counter for how long the last button(signal cycles) have been pressed for
+  a counter for how long the last button(signal cycles) have been pressed for:
   
     char isRepeat = 0 ;
